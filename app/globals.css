@@ -1,26 +1,93 @@
 @import "tailwindcss";
+@import "lenis/dist/lenis.css";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  color-scheme: dark;
+  --background: #120424;
+  --foreground: #f8f9ff;
+  --muted: #b7b9d6;
+  --accent-primary: #c4ff3f;
+  --accent-secondary: #9a5bff;
+  --accent-tertiary: #ff7cf7;
+  --surface: radial-gradient(120% 160% at 24% 0%, #25104a 0%, #120424 60%, #0b0216 100%);
+  --surface-muted: linear-gradient(160deg, rgba(38, 9, 68, 0.92) 0%, rgba(17, 2, 32, 0.92) 100%);
+  --surface-strong: linear-gradient(180deg, #2a104f 0%, #05000d 100%);
+  --surface-border: rgba(150, 107, 255, 0.35);
+  --surface-border-strong: rgba(199, 255, 63, 0.45);
+  --surface-shadow: 0 35px 80px rgba(8, 0, 18, 0.55);
+  --surface-shadow-soft: 0 25px 55px rgba(8, 0, 25, 0.38);
+  --pill-bg: linear-gradient(135deg, rgba(196, 255, 63, 0.18), rgba(154, 91, 255, 0.18));
+  --pill-border: rgba(196, 255, 63, 0.35);
 }
 
 body {
-  background: var(--background);
+  margin: 0;
+  background: var(--surface);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  min-height: 100vh;
+  cursor: default;
+}
+
+html.has-custom-cursor body {
+  cursor: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid rgba(59, 164, 255, 0.6);
+  outline-offset: 4px;
+}
+
+::selection {
+  background: rgba(196, 255, 63, 0.35);
+  color: #0b0216;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(11, 13, 19, 0.6);
+}
+
+.surface-card {
+  background: var(--surface-muted);
+  border: 1px solid var(--surface-border);
+  box-shadow: var(--surface-shadow-soft);
+}
+
+.surface-card-strong {
+  background: var(--surface-strong);
+  border: 1px solid var(--surface-border-strong);
+  box-shadow: var(--surface-shadow);
+}
+
+.pill {
+  background: var(--pill-bg);
+  border: 1px solid var(--pill-border);
+  color: var(--accent-primary);
+}
+
+.headline {
+  text-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+}
+
+.tagline {
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+}
+
+.gradient-orb {
+  position: absolute;
+  filter: blur(80px);
+  opacity: 0.65;
 }

@@ -1,0 +1,40 @@
+﻿<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="1000" rx="48" fill="#0f1117"/>
+  <g filter="url(#blur0)">
+    <circle cx="400" cy="380" r="240" fill="url(#gradA)"/>
+  </g>
+  <g filter="url(#blur1)">
+    <circle cx="1240" cy="620" r="280" fill="url(#gradB)"/>
+  </g>
+  <rect x="200" y="260" width="1200" height="520" rx="40" fill="#10131c" stroke="url(#strokeGrad)" stroke-width="2"/>
+  <path d="M280 520H1320" stroke="url(#lineGrad)" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M280 450C360 360 520 360 600 450C680 540 840 540 920 450C1000 360 1160 360 1240 450" stroke="url(#waveGrad)" stroke-width="3" stroke-linecap="round"/>
+  <defs>
+    <filter id="blur0" x="40" y="20" width="720" height="720" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="90" result="blur"/>
+    </filter>
+    <filter id="blur1" x="820" y="200" width="840" height="840" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="120" result="blur"/>
+    </filter>
+    <linearGradient id="gradA" x1="180" y1="140" x2="540" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3ef3ff"/>
+      <stop offset="1" stop-color="#818CFF"/>
+    </linearGradient>
+    <linearGradient id="gradB" x1="960" y1="380" x2="1390" y2="860" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8A6CFF"/>
+      <stop offset="1" stop-color="#2CF2D3"/>
+    </linearGradient>
+    <linearGradient id="strokeGrad" x1="200" y1="260" x2="1120" y2="860" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#39DEF5" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#A78BFA" stop-opacity="0.7"/>
+    </linearGradient>
+    <linearGradient id="lineGrad" x1="280" y1="520" x2="1320" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4DE6FF"/>
+      <stop offset="1" stop-color="#B5A0FF"/>
+    </linearGradient>
+    <linearGradient id="waveGrad" x1="280" y1="360" x2="1320" y2="540" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#50F5C7" stop-opacity="0.7"/>
+      <stop offset="1" stop-color="#7B6BFF" stop-opacity="0.7"/>
+    </linearGradient>
+  </defs>
+</svg>

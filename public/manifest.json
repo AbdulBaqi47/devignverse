@@ -1,0 +1,15 @@
+﻿{
+  "name": "Devign Verse",
+  "short_name": "Devign Verse",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#05060a",
+  "theme_color": "#0f0f10",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "32x32 64x64",
+      "type": "image/x-icon"
+    }
+  ]
+}

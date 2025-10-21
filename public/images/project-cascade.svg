@@ -1,0 +1,41 @@
+﻿<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="1000" rx="48" fill="#0f1117"/>
+  <g filter="url(#blur0)">
+    <rect x="340" y="180" width="420" height="420" rx="84" fill="url(#gradA)"/>
+  </g>
+  <g filter="url(#blur1)">
+    <rect x="900" y="340" width="480" height="480" rx="120" fill="url(#gradB)"/>
+  </g>
+  <rect x="220" y="240" width="1160" height="520" rx="40" fill="#10131c" stroke="#202842" stroke-width="2"/>
+  <g opacity="0.6">
+    <path d="M320 360H1280" stroke="url(#gradLine)" stroke-width="2" stroke-linecap="round"/>
+    <path d="M320 440H1280" stroke="url(#gradLine)" stroke-width="2" stroke-linecap="round"/>
+    <path d="M320 520H1280" stroke="url(#gradLine)" stroke-width="2" stroke-linecap="round"/>
+    <path d="M320 600H1280" stroke="url(#gradLine)" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <path d="M420 660C540 520 700 700 820 560C940 420 1100 660 1220 520" stroke="url(#curve)" stroke-width="4" stroke-linecap="round"/>
+  <defs>
+    <filter id="blur0" x="140" y="-20" width="820" height="820" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="100"/>
+    </filter>
+    <filter id="blur1" x="700" y="140" width="880" height="880" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="120"/>
+    </filter>
+    <linearGradient id="gradA" x1="340" y1="180" x2="700" y2="540" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#55EFFF"/>
+      <stop offset="1" stop-color="#6F5DFF"/>
+    </linearGradient>
+    <linearGradient id="gradB" x1="900" y1="340" x2="1380" y2="820" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8A62FF"/>
+      <stop offset="1" stop-color="#2BD5D6"/>
+    </linearGradient>
+    <linearGradient id="gradLine" x1="320" y1="360" x2="1280" y2="360" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#51D8FF"/>
+      <stop offset="1" stop-color="#C1A8FF"/>
+    </linearGradient>
+    <linearGradient id="curve" x1="420" y1="520" x2="1220" y2="660" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2FFFD2"/>
+      <stop offset="1" stop-color="#A688FF"/>
+    </linearGradient>
+  </defs>
+</svg>
