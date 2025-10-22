@@ -1,0 +1,32 @@
+﻿<svg width="780" height="340" viewBox="0 0 780 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="780" height="340" rx="40" fill="#F8FAFC"/>
+  <g filter="url(#shadowOne)">
+    <rect x="72" y="64" width="220" height="180" rx="24" fill="#0F172A"/>
+    <rect x="92" y="92" width="84" height="12" rx="6" fill="#CBD5F5"/>
+    <rect x="92" y="116" width="140" height="10" rx="5" fill="#94A3B8" opacity="0.9"/>
+    <rect x="92" y="138" width="100" height="10" rx="5" fill="#CBD5F5" opacity="0.7"/>
+    <rect x="92" y="162" width="120" height="68" rx="14" fill="#1D4ED8" opacity="0.6"/>
+  </g>
+  <g filter="url(#shadowTwo)">
+    <rect x="284" y="120" width="320" height="160" rx="28" fill="#FFFFFF"/>
+    <rect x="316" y="152" width="116" height="84" rx="18" fill="#2563EB" fill-opacity="0.15"/>
+    <rect x="452" y="152" width="116" height="84" rx="18" fill="#F97316" fill-opacity="0.12"/>
+    <rect x="316" y="248" width="216" height="12" rx="6" fill="#E2E8F0"/>
+  </g>
+  <g filter="url(#shadowThree)">
+    <rect x="540" y="48" width="180" height="120" rx="24" transform="rotate(6 540 48)" fill="#E0E7FF"/>
+    <rect x="592" y="84" width="104" height="12" rx="6" transform="rotate(6 592 84)" fill="#2563EB" fill-opacity="0.8"/>
+    <rect x="588" y="108" width="120" height="10" rx="5" transform="rotate(6 588 108)" fill="#1D4ED8" fill-opacity="0.5"/>
+  </g>
+  <defs>
+    <filter id="shadowOne" x="22" y="24" width="320" height="280" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="32" stdDeviation="28" flood-color="#94A3B8" flood-opacity="0.32"/>
+    </filter>
+    <filter id="shadowTwo" x="224" y="70" width="440" height="280" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="26" stdDeviation="28" flood-color="#CBD5F5" flood-opacity="0.46"/>
+    </filter>
+    <filter id="shadowThree" x="450" y="18" width="260" height="220" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="20" stdDeviation="20" flood-color="#94A3B8" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+</svg>

@@ -9,6 +9,7 @@ import { SectionHeading } from "@/components/ui/section-heading";
 import { TiltCard } from "@/components/ui/tilt-card";
 import { GlassCard } from "@/components/ui/glass-card";
 import Link from "next/link";
+import PortfolioCollage from "@/public/images/portfolio-collage.svg";
 
 export function Portfolio() {
   const [activeProject, setActiveProject] = useState<PortfolioProject | null>(null);
@@ -22,6 +23,19 @@ export function Portfolio() {
           description="A glimpse into the launches, products, and experiences we have supercharged with expressive design, motion, and community energy."
           align="center"
         />
+        <div className="surface-card relative overflow-hidden rounded-[32px] border border-slate-200/70 bg-white shadow-[0_20px_60px_rgba(15,23,42,0.08)]">
+          <Image src={PortfolioCollage} alt="Case study collage" className="h-auto w-full" priority />
+          <div className="absolute bottom-6 left-6 flex flex-wrap gap-3">
+            {["Strategy", "Content", "Launch"].map((pill) => (
+              <span
+                key={pill}
+                className="rounded-full border border-slate-900 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.4em] text-slate-900"
+              >
+                {pill}
+              </span>
+            ))}
+          </div>
+        </div>
         <div className="grid gap-8 md:grid-cols-2">
           {portfolioProjects.map((project) => (
             <TiltCard key={project.slug} intensity={10} className="group">
@@ -61,7 +75,7 @@ export function Portfolio() {
                     className="inline-flex items-center gap-2 text-sm font-semibold text-[var(--accent-secondary)]"
                     whileHover={{ x: 4 }}
                   >
-                    Preview ↗
+                    Preview ?
                   </motion.span>
                 </div>
               </GlassCard>
@@ -119,3 +133,4 @@ export function Portfolio() {
     </Section>
   );
 }
+

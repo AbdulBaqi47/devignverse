@@ -1,8 +1,12 @@
-import { type StaticImageData } from "next/image";
+﻿import { type StaticImageData } from "next/image";
 import Aurora from "@/public/images/project-aurora.svg";
 import Cascade from "@/public/images/project-cascade.svg";
 import Nebula from "@/public/images/project-nebula.svg";
 import Prism from "@/public/images/project-prism.svg";
+import ServiceWebImg from "@/public/images/service-web.svg";
+import ServiceDesignImg from "@/public/images/service-design.svg";
+import ServiceAiImg from "@/public/images/service-ai.svg";
+import ServiceAppImg from "@/public/images/service-app.svg";
 import { BrainCircuit, Code, Palette, Workflow } from "lucide-react";
 
 type IconType = typeof BrainCircuit;
@@ -80,6 +84,7 @@ export type ServiceCard = {
   description: string;
   icon: IconType;
   accent: string;
+  image: StaticImageData;
 };
 
 export const services: ServiceCard[] = [
@@ -87,25 +92,29 @@ export const services: ServiceCard[] = [
     title: "Web Experiences",
     description: "Enterprise-ready platforms engineered in Next.js with cinematic motion.",
     icon: Code,
-    accent: "from-blue-500/20 to-transparent"
+    accent: "from-blue-500/20 to-transparent",
+    image: ServiceWebImg
   },
   {
     title: "Product Design",
     description: "End-to-end product discovery, UX, and UI systems built for clarity and conversion.",
     icon: Palette,
-    accent: "from-slate-900/15 to-transparent"
+    accent: "from-slate-900/15 to-transparent",
+    image: ServiceDesignImg
   },
   {
     title: "AI Interfaces",
     description: "Conversational journeys, intelligent copilots, and ML-backed analytics.",
     icon: BrainCircuit,
-    accent: "from-emerald-500/15 to-transparent"
+    accent: "from-emerald-500/15 to-transparent",
+    image: ServiceAiImg
   },
   {
     title: "Immersive Apps",
     description: "Native-feel PWA and mobile apps with fluid gesture-driven experiences.",
     icon: Workflow,
-    accent: "from-orange-500/15 to-transparent"
+    accent: "from-orange-500/15 to-transparent",
+    image: ServiceAppImg
   }
 ];
 
@@ -180,3 +189,4 @@ export const socialLinks = [
 export function getProjectBySlug(slug: string) {
   return portfolioProjects.find((project) => project.slug === slug);
 }
+

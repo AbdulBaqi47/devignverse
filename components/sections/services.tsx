@@ -1,5 +1,6 @@
-"use client";
+﻿"use client";
 
+import Image from "next/image";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -63,7 +64,7 @@ export function Services() {
                 ref={(node) => {
                   cardsRef.current[index] = node;
                 }}
-                className="group relative h-full p-8"
+                className="group relative h-full overflow-hidden p-8"
                 glow
               >
                 <div
@@ -75,8 +76,13 @@ export function Services() {
                 />
                 <div className="absolute inset-0 rounded-3xl bg-[linear-gradient(180deg,rgba(37,99,235,0.06),rgba(37,99,235,0.1))] opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
                 <div className="relative flex flex-col gap-5">
-                  <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-transparent bg-[linear-gradient(140deg,#111827,#2563eb)] text-white shadow-[0_18px_30px_rgba(15,23,42,0.15)]">
-                    <Icon size={22} />
+                  <div className="flex items-center gap-4">
+                    <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-transparent bg-[linear-gradient(140deg,#111827,#2563eb)] text-white shadow-[0_18px_30px_rgba(15,23,42,0.15)]">
+                      <Icon size={22} />
+                    </div>
+                    <div className="relative h-16 w-16 overflow-hidden rounded-2xl border border-slate-200/80 bg-white">
+                      <Image src={service.image} alt={service.title} className="h-full w-full object-cover" />
+                    </div>
                   </div>
                   <div className="space-y-3">
                     <h3 className="text-xl font-semibold text-[var(--foreground)]">{service.title}</h3>
@@ -95,3 +101,4 @@ export function Services() {
     </Section>
   );
 }
+

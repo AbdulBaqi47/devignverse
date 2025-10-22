@@ -1,15 +1,17 @@
 ﻿"use client";
 
+import Image from "next/image";
 import { timeline, values } from "@/lib/data";
 import { Section } from "@/components/ui/section";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { GlassCard } from "@/components/ui/glass-card";
 import { motion } from "framer-motion";
+import AboutCollage from "@/public/images/about-collage.svg";
 
 export function About() {
   return (
     <Section id="about" className="mt-28">
-      <div className="mx-auto grid w-full max-w-6xl gap-16 lg:grid-cols-[1.1fr_0.9fr]">
+      <div className="mx-auto grid w-full max-w-6xl gap-16 lg:grid-cols-[1.05fr_1fr]">
         <div className="space-y-10">
           <SectionHeading
             eyebrow="Who we are"
@@ -18,11 +20,7 @@ export function About() {
           />
           <div className="space-y-6">
             {values.map((value) => (
-              <GlassCard
-                key={value.title}
-                className="relative p-6"
-                glow
-              >
+              <GlassCard key={value.title} className="relative p-6" glow>
                 <h3 className="text-lg font-semibold text-[var(--foreground)]">{value.title}</h3>
                 <p className="mt-3 text-sm text-[var(--muted)]">{value.description}</p>
                 <motion.span
@@ -34,8 +32,13 @@ export function About() {
             ))}
           </div>
         </div>
-        <div className="relative">
-          <div className="pointer-events-none absolute -inset-x-6 top-6 h-1/2 rounded-full bg-[radial-gradient(circle,_rgba(148,163,184,0.2),_rgba(255,255,255,0)_70%)]" />
+        <div className="space-y-8">
+          <div className="surface-card relative overflow-hidden rounded-[32px] border border-slate-200/70 bg-white shadow-[0_24px_60px_rgba(15,23,42,0.08)]">
+            <Image src={AboutCollage} alt="Team collaborating collage" className="h-auto w-full" />
+            <div className="absolute left-6 top-6 rounded-full bg-white px-4 py-1 text-xs font-semibold uppercase tracking-[0.4em] text-slate-900 shadow-sm">
+              Studio in action
+            </div>
+          </div>
           <div className="space-y-6">
             {timeline.map((item, index) => (
               <motion.div
@@ -60,3 +63,4 @@ export function About() {
     </Section>
   );
 }
+
