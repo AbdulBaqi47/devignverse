@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div className="relative overflow-hidden">
       <Navbar />
-      <main className="relative mx-auto flex w-full max-w-6xl flex-col px-4">
+      <main className="relative mx-auto flex w-full flex-col">
         <Hero />
         <About />
         <Services />
