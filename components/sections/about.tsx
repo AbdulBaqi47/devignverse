@@ -26,7 +26,7 @@ export function About() {
                 <h3 className="text-lg font-semibold text-[var(--foreground)]">{value.title}</h3>
                 <p className="mt-3 text-sm text-[var(--muted)]">{value.description}</p>
                 <motion.span
-                  className="absolute -right-8 -top-8 h-24 w-24 rounded-full bg-[radial-gradient(circle,_rgba(196,255,63,0.45),_rgba(16,2,34,0))] blur-3xl"
+                  className="absolute -right-8 -top-8 h-24 w-24 rounded-full bg-[radial-gradient(circle,_rgba(37,99,235,0.18),_rgba(255,255,255,0))] blur-3xl"
                   animate={{ scale: [1, 1.2, 1] }}
                   transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
                 />
@@ -35,7 +35,7 @@ export function About() {
           </div>
         </div>
         <div className="relative">
-          <div className="pointer-events-none absolute -inset-x-6 top-6 h-1/2 rounded-full bg-[radial-gradient(circle,_rgba(154,91,255,0.3),_rgba(17,4,33,0)_70%)]" />
+          <div className="pointer-events-none absolute -inset-x-6 top-6 h-1/2 rounded-full bg-[radial-gradient(circle,_rgba(148,163,184,0.2),_rgba(255,255,255,0)_70%)]" />
           <div className="space-y-6">
             {timeline.map((item, index) => (
               <motion.div
@@ -46,12 +46,12 @@ export function About() {
                 viewport={{ once: true, margin: "-10%" }}
                 transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1], delay: index * 0.08 }}
               >
-                <span className="text-xs font-semibold uppercase tracking-[0.4em] text-[var(--accent-primary)]">
+                <span className="text-xs font-semibold uppercase tracking-[0.4em] text-[var(--accent-secondary)]">
                   {item.period}
                 </span>
                 <h3 className="mt-3 text-xl font-semibold text-[var(--foreground)]">{item.title}</h3>
                 <p className="mt-3 text-sm text-[var(--muted)]">{item.summary}</p>
-                <p className="mt-4 text-sm font-medium text-[var(--accent-primary)]">{item.highlight}</p>
+                <p className="mt-4 text-sm font-medium text-[var(--accent-secondary)]">{item.highlight}</p>
               </motion.div>
             ))}
           </div>

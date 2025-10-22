@@ -39,14 +39,14 @@ export function Portfolio() {
                     className="h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
                     sizes="(max-width: 768px) 100vw, 50vw"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#05060a] via-transparent to-transparent opacity-60" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-transparent opacity-60" />
                 </div>
                 <div className="mt-6 space-y-4">
                   <div className="flex items-center gap-3">
                     {project.tags.map((tag) => (
                       <span
                         key={tag}
-                        className="rounded-full border border-transparent bg-[linear-gradient(135deg,rgba(196,255,63,0.25),rgba(154,91,255,0.25))] px-4 py-1 text-xs uppercase tracking-[0.4em] text-[var(--foreground)]"
+                        className="rounded-full border border-slate-200 bg-slate-100 px-4 py-1 text-xs uppercase tracking-[0.4em] text-[var(--accent-primary)]"
                       >
                         {tag}
                       </span>
@@ -55,10 +55,10 @@ export function Portfolio() {
                   <div className="space-y-3">
                     <h3 className="text-2xl font-semibold text-[var(--foreground)]">{project.title}</h3>
                     <p className="text-sm text-[var(--muted)]">{project.description}</p>
-                    <p className="text-xs uppercase tracking-[0.4em] text-[var(--accent-primary)]">{project.outcome}</p>
+                    <p className="text-xs uppercase tracking-[0.4em] text-[var(--accent-secondary)]">{project.outcome}</p>
                   </div>
                   <motion.span
-                    className="inline-flex items-center gap-2 text-sm font-semibold text-[var(--accent-primary)]"
+                    className="inline-flex items-center gap-2 text-sm font-semibold text-[var(--accent-secondary)]"
                     whileHover={{ x: 4 }}
                   >
                     Preview ↗
@@ -105,10 +105,10 @@ export function Portfolio() {
               </div>
               <h3 className="text-3xl font-semibold text-[var(--foreground)]">{activeProject.title}</h3>
               <p className="mt-3 text-sm text-[var(--muted)]">{activeProject.description}</p>
-              <p className="mt-6 text-sm text-[var(--accent-primary)]">{activeProject.outcome}</p>
+              <p className="mt-6 text-sm text-[var(--accent-secondary)]">{activeProject.outcome}</p>
               <Link
                 href={`/projects/${activeProject.slug}`}
-                className="mt-8 inline-flex items-center gap-2 rounded-full bg-[linear-gradient(135deg,#9a5bff,#c4ff3f)] px-5 py-3 text-xs font-semibold uppercase tracking-[0.4em] text-[#100222] transition-transform duration-300 hover:scale-[1.03]"
+                className="mt-8 inline-flex items-center gap-2 rounded-full bg-[#0f172a] px-5 py-3 text-xs font-semibold uppercase tracking-[0.4em] text-white transition-transform duration-300 hover:scale-[1.03]"
               >
                 View case study
               </Link>

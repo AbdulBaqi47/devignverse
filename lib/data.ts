@@ -87,25 +87,25 @@ export const services: ServiceCard[] = [
     title: "Web Experiences",
     description: "Enterprise-ready platforms engineered in Next.js with cinematic motion.",
     icon: Code,
-    accent: "from-cyan-500/40 to-blue-500/30"
+    accent: "from-blue-500/20 to-transparent"
   },
   {
     title: "Product Design",
-    description: "Glassmorphism UI systems, full design ops, and narrative prototyping.",
+    description: "End-to-end product discovery, UX, and UI systems built for clarity and conversion.",
     icon: Palette,
-    accent: "from-fuchsia-500/40 to-purple-500/30"
+    accent: "from-slate-900/15 to-transparent"
   },
   {
     title: "AI Interfaces",
     description: "Conversational journeys, intelligent copilots, and ML-backed analytics.",
     icon: BrainCircuit,
-    accent: "from-emerald-500/40 to-teal-500/30"
+    accent: "from-emerald-500/15 to-transparent"
   },
   {
     title: "Immersive Apps",
     description: "Native-feel PWA and mobile apps with fluid gesture-driven experiences.",
     icon: Workflow,
-    accent: "from-amber-500/40 to-orange-500/30"
+    accent: "from-orange-500/15 to-transparent"
   }
 ];
 

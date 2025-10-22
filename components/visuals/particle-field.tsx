@@ -27,7 +27,7 @@ export function ParticleField({ className }: ParticleFieldProps) {
       {particles.map((particle) => (
         <motion.span
           key={particle.id}
-          className="absolute rounded-full bg-[rgba(196,255,63,0.4)]"
+          className="absolute rounded-full bg-[rgba(37,99,235,0.2)]"
           style={{
             width: particle.size,
             height: particle.size,

@@ -10,20 +10,19 @@ export function ShimmerButton({ className, children, ...props }: MotionButtonPro
   return (
     <motion.button
       className={cn(
-        "group relative overflow-hidden rounded-full px-7 py-3 text-sm font-semibold uppercase tracking-[0.4em]",
-        "bg-[linear-gradient(135deg,#9a5bff,#c4ff3f)] text-[#100222]",
-        "shadow-[0_0_40px_rgba(12,0,36,0.45)] transition-transform duration-300",
+        "group relative overflow-hidden rounded-full px-7 py-3 text-sm font-semibold uppercase tracking-[0.35em]",
+        "bg-[#0f172a] text-white shadow-[0_12px_30px_rgba(15,23,42,0.2)] transition-transform duration-300",
         "hover:-translate-y-0.5 active:translate-y-0",
         className
       )}
-      whileHover={{ scale: 1.03 }}
+      whileHover={{ scale: 1.02 }}
       whileTap={{ scale: 0.97 }}
       {...props}
     >
-      <span className="relative z-10 mix-blend-screen text-xs font-semibold tracking-[0.6em] text-white">
+      <span className="relative z-10 text-xs font-semibold tracking-[0.55em] text-white">
         {children}
       </span>
-      <span className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.6),_transparent_55%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+      <span className="pointer-events-none absolute inset-x-4 inset-y-2 rounded-full border border-white/10 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
     </motion.button>
   );
 }

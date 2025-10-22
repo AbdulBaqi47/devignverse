@@ -32,15 +32,15 @@ export function TechStack() {
           align="center"
         />
         <div className="surface-card relative overflow-hidden rounded-3xl p-10">
-          <div className="pointer-events-none absolute inset-y-0 left-0 w-32 bg-[linear-gradient(90deg,#120424,rgba(18,4,36,0))]" />
-          <div className="pointer-events-none absolute inset-y-0 right-0 w-32 bg-[linear-gradient(270deg,#120424,rgba(18,4,36,0))]" />
+          <div className="pointer-events-none absolute inset-y-0 left-0 w-32 bg-[linear-gradient(90deg,#ffffff,rgba(255,255,255,0))]" />
+          <div className="pointer-events-none absolute inset-y-0 right-0 w-32 bg-[linear-gradient(270deg,#ffffff,rgba(255,255,255,0))]" />
           <motion.div className="flex gap-10" variants={marqueeVariants} animate="animate">
             {doubled.map((item, index) => (
               <div
                 key={`${item.label}-${index}`}
                 className="surface-card-strong flex h-28 min-w-[12rem] flex-col items-center justify-center gap-3 rounded-2xl px-6"
               >
-                <span className="text-sm uppercase tracking-[0.4em] text-[var(--accent-primary)]">{item.category}</span>
+                <span className="text-sm uppercase tracking-[0.4em] text-[var(--accent-secondary)]">{item.category}</span>
                 <span className="text-lg font-semibold text-[var(--foreground)]">{item.label}</span>
               </div>
             ))}

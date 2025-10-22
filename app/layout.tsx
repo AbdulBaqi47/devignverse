@@ -1,4 +1,4 @@
-import type { Metadata, Viewport } from "next";
+﻿import type { Metadata, Viewport } from "next";
 import { Manrope } from "next/font/google";
 import "./globals.css";
 import { Providers } from "@/components/layout/providers";
@@ -17,10 +17,10 @@ export const metadata: Metadata = {
     template: "%s | Devign Verse"
   },
   description:
-    "Devign Verse blends neon storytelling, motion design, and fearless engineering to help brands launch culture-making digital experiences.",
+    "Devign Verse blends strategy, storytelling, and engineering to help brands launch culture-making digital experiences.",
   keywords: [
     "Devign Verse",
-    "social media agency",
+    "creative agency",
     "Next.js studio",
     "motion design",
     "brand launch",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Devign Verse — Supercharged Digital Launchpads",
     description:
-      "Devign Verse blends neon storytelling, motion design, and fearless engineering to help brands launch culture-making digital experiences.",
+      "Devign Verse blends strategy, storytelling, and engineering to help brands launch culture-making digital experiences.",
     url: "https://devignverse.com",
     siteName: "Devign Verse",
     images: [
@@ -45,14 +45,14 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Devign Verse — Supercharged Digital Launchpads",
     description:
-      "Devign Verse blends neon storytelling, motion design, and fearless engineering to help brands launch culture-making digital experiences.",
+      "Devign Verse blends strategy, storytelling, and engineering to help brands launch culture-making digital experiences.",
     creator: "@devignverse",
     images: ["/opengraph-image"]
   }
 };
 
 export const viewport: Viewport = {
-  themeColor: [{ media: "(prefers-color-scheme: dark)", color: "#120424" }],
+  themeColor: "#ffffff",
   maximumScale: 1
 };
 
@@ -69,3 +69,4 @@ export default function RootLayout({
     </html>
   );
 }
+

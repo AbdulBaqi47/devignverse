@@ -44,10 +44,10 @@ export default function ProjectPage({ params }: ProjectPageProps) {
   return (
     <div className="relative mx-auto mt-32 flex w-full max-w-5xl flex-col gap-10 px-4 pb-24">
       <div className="surface-card-strong rounded-3xl p-10">
-        <p className="text-xs uppercase tracking-[0.6em] text-[var(--accent-primary)]">Case study</p>
+        <p className="text-xs uppercase tracking-[0.6em] text-[var(--accent-secondary)]">Case study</p>
         <h1 className="mt-4 text-4xl font-semibold text-[var(--foreground)]">{project.title}</h1>
         <p className="mt-6 max-w-3xl text-base text-[var(--muted)]">{project.description}</p>
-        <p className="mt-6 text-sm uppercase tracking-[0.4em] text-[var(--accent-primary)]">{project.outcome}</p>
+        <p className="mt-6 text-sm uppercase tracking-[0.4em] text-[var(--accent-secondary)]">{project.outcome}</p>
       </div>
       <div className="surface-card relative h-[420px] overflow-hidden rounded-3xl">
         <Image
@@ -75,3 +75,4 @@ export default function ProjectPage({ params }: ProjectPageProps) {
     </div>
   );
 }
+

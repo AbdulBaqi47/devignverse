@@ -2,22 +2,22 @@
 @import "lenis/dist/lenis.css";
 
 :root {
-  color-scheme: dark;
-  --background: #120424;
-  --foreground: #f8f9ff;
-  --muted: #b7b9d6;
-  --accent-primary: #c4ff3f;
-  --accent-secondary: #9a5bff;
-  --accent-tertiary: #ff7cf7;
-  --surface: radial-gradient(120% 160% at 24% 0%, #25104a 0%, #120424 60%, #0b0216 100%);
-  --surface-muted: linear-gradient(160deg, rgba(38, 9, 68, 0.92) 0%, rgba(17, 2, 32, 0.92) 100%);
-  --surface-strong: linear-gradient(180deg, #2a104f 0%, #05000d 100%);
-  --surface-border: rgba(150, 107, 255, 0.35);
-  --surface-border-strong: rgba(199, 255, 63, 0.45);
-  --surface-shadow: 0 35px 80px rgba(8, 0, 18, 0.55);
-  --surface-shadow-soft: 0 25px 55px rgba(8, 0, 25, 0.38);
-  --pill-bg: linear-gradient(135deg, rgba(196, 255, 63, 0.18), rgba(154, 91, 255, 0.18));
-  --pill-border: rgba(196, 255, 63, 0.35);
+  color-scheme: light;
+  --background: #ffffff;
+  --foreground: #0f172a;
+  --muted: #475569;
+  --accent-primary: #111827;
+  --accent-secondary: #2563eb;
+  --accent-tertiary: #f97316;
+  --surface: linear-gradient(180deg, #f8fafc 0%, #ffffff 45%, #f3f4f6 100%);
+  --surface-muted: #ffffff;
+  --surface-strong: #ffffff;
+  --surface-border: rgba(15, 23, 42, 0.08);
+  --surface-border-strong: rgba(15, 23, 42, 0.12);
+  --surface-shadow: 0 24px 60px rgba(15, 23, 42, 0.08);
+  --surface-shadow-soft: 0 16px 40px rgba(15, 23, 42, 0.06);
+  --pill-bg: rgba(37, 99, 235, 0.08);
+  --pill-border: rgba(37, 99, 235, 0.24);
 }
 
 body {
@@ -42,13 +42,13 @@ a:focus-visible,
 button:focus-visible,
 input:focus-visible,
 textarea:focus-visible {
-  outline: 2px solid rgba(59, 164, 255, 0.6);
+  outline: 2px solid rgba(37, 99, 235, 0.45);
   outline-offset: 4px;
 }
 
 ::selection {
-  background: rgba(196, 255, 63, 0.35);
-  color: #0b0216;
+  background: rgba(37, 99, 235, 0.2);
+  color: #0f172a;
 }
 
 ::-webkit-scrollbar {
@@ -56,7 +56,12 @@ textarea:focus-visible {
 }
 
 ::-webkit-scrollbar-track {
-  background: rgba(11, 13, 19, 0.6);
+  background: rgba(226, 232, 240, 0.8);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.6);
+  border-radius: 9999px;
 }
 
 .surface-card {
@@ -74,11 +79,11 @@ textarea:focus-visible {
 .pill {
   background: var(--pill-bg);
   border: 1px solid var(--pill-border);
-  color: var(--accent-primary);
+  color: var(--accent-secondary);
 }
 
 .headline {
-  text-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+  text-shadow: 0 14px 30px rgba(15, 23, 42, 0.12);
 }
 
 .tagline {
@@ -88,6 +93,6 @@ textarea:focus-visible {
 
 .gradient-orb {
   position: absolute;
-  filter: blur(80px);
-  opacity: 0.65;
+  filter: blur(120px);
+  opacity: 0.45;
 }

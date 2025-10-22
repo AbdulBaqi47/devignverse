@@ -7,7 +7,7 @@ import Link from "next/link";
 export function Footer() {
   return (
     <footer className="relative mt-28 flex flex-col items-center gap-8 pb-12">
-      <div className="h-2 w-full max-w-6xl rounded-full bg-[linear-gradient(135deg,#9a5bff,#c4ff3f)]" />
+      <div className="h-px w-full max-w-6xl bg-slate-200" />
       <motion.div
         className="surface-card-strong flex flex-col items-center gap-6 rounded-3xl px-10 py-8 text-center md:flex-row md:justify-between md:gap-10"
         initial={{ opacity: 0, y: 32 }}

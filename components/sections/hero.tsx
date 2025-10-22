@@ -35,9 +35,9 @@ export function Hero() {
       className="relative flex min-h-[92vh] flex-col justify-center overflow-hidden pb-32 pt-40 md:pt-48"
     >
       <div className="pointer-events-none absolute inset-0">
-        <div className="absolute -left-32 top-10 h-[520px] w-[520px] rounded-full bg-[radial-gradient(circle,_rgba(154,91,255,0.4)_0%,_rgba(18,4,36,0)_70%)]" />
-        <div className="absolute right-[-180px] top-16 h-[620px] w-[620px] rounded-full bg-[radial-gradient(circle,_rgba(196,255,63,0.35)_0%,_rgba(17,4,32,0)_70%)]" />
-        <div className="absolute inset-x-0 bottom-[-320px] h-[520px] bg-[radial-gradient(circle_at_50%_0%,_rgba(122,58,255,0.35),_rgba(10,2,18,0)_65%)]" />
+        <div className="absolute -left-32 top-[-40px] h-[480px] w-[480px] rounded-full bg-[radial-gradient(circle,_rgba(37,99,235,0.16)_0%,_rgba(255,255,255,0)_70%)]" />
+        <div className="absolute right-[-220px] top-16 h-[540px] w-[540px] rounded-full bg-[radial-gradient(circle,_rgba(15,23,42,0.14)_0%,_rgba(255,255,255,0)_75%)]" />
+        <div className="absolute inset-x-0 bottom-[-300px] h-[480px] bg-[radial-gradient(circle_at_50%_0%,_rgba(148,163,184,0.22),_rgba(255,255,255,0)_70%)]" />
       </div>
       <ParticleField className="pointer-events-none absolute inset-0" />
       <motion.div
@@ -79,7 +79,7 @@ export function Hero() {
           <Magnetic>
             <motion.a
               href="#portfolio"
-              className="group flex items-center gap-2 rounded-full bg-[linear-gradient(135deg,#9a5bff,#c4ff3f)] px-6 py-3 text-sm font-semibold uppercase tracking-[0.32em] text-[#100222] transition-transform duration-300 hover:scale-[1.02]"
+              className="group flex items-center gap-2 rounded-full border border-slate-900 px-6 py-3 text-sm font-semibold uppercase tracking-[0.32em] text-slate-900 transition-colors duration-300 hover:bg-slate-900 hover:text-white"
               whileHover={{ scale: 1.02 }}
             >
               View work

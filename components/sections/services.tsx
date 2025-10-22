@@ -69,13 +69,13 @@ export function Services() {
                 <div
                   className={cn(
                     "absolute -right-12 -top-12 h-48 w-48 rounded-full blur-3xl transition-opacity duration-700 group-hover:opacity-100",
-                    "bg-[radial-gradient(circle,_rgba(196,255,63,0.45)_0%,_rgba(12,2,26,0)_80%)]",
+                    "bg-[radial-gradient(circle,_rgba(37,99,235,0.18)_0%,_rgba(255,255,255,0)_80%)]",
                     service.accent
                   )}
                 />
-                <div className="absolute inset-0 rounded-3xl bg-[linear-gradient(180deg,rgba(255,255,255,0.05),rgba(199,255,63,0.08))] opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+                <div className="absolute inset-0 rounded-3xl bg-[linear-gradient(180deg,rgba(37,99,235,0.06),rgba(37,99,235,0.1))] opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
                 <div className="relative flex flex-col gap-5">
-                  <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-transparent bg-[linear-gradient(140deg,#c4ff3f,#8f5eff)] text-[#100222] shadow-[0_18px_40px_rgba(9,0,23,0.45)]">
+                  <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-transparent bg-[linear-gradient(140deg,#111827,#2563eb)] text-white shadow-[0_18px_30px_rgba(15,23,42,0.15)]">
                     <Icon size={22} />
                   </div>
                   <div className="space-y-3">
@@ -83,8 +83,8 @@ export function Services() {
                     <p className="text-sm leading-6 text-[var(--muted)]">{service.description}</p>
                   </div>
                   <div
-                    className="relative mt-6 h-1 rounded-full bg-gradient-to-r from-transparent via-[rgba(196,255,63,0.7)] to-transparent"
-                    style={{ boxShadow: "0 20px 50px rgba(196, 255, 63, 0.25)" }}
+                    className="relative mt-6 h-1 rounded-full bg-gradient-to-r from-transparent via-[rgba(37,99,235,0.5)] to-transparent"
+                    style={{ boxShadow: "0 20px 40px rgba(37, 99, 235, 0.18)" }}
                   />
                 </div>
               </GlassCard>

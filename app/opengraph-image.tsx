@@ -19,17 +19,17 @@ export default function OpengraphImage() {
           justifyContent: "center",
           alignItems: "flex-start",
           padding: "80px 100px",
-          background: "linear-gradient(135deg, #0a0b14, #111b38)",
-          color: "#f5f7ff",
+          background: "#ffffff",
+          color: "#0f172a",
           fontFamily: "Manrope, sans-serif"
         }}
       >
         <div
           style={{
             textTransform: "uppercase",
-            letterSpacing: "0.6em",
+            letterSpacing: "0.55em",
             fontSize: 16,
-            color: "rgba(190,230,255,0.9)",
+            color: "#2563eb",
             marginBottom: 30
           }}
         >
@@ -43,13 +43,13 @@ export default function OpengraphImage() {
             fontWeight: 600
           }}
         >
-          Innovating digital experiences with glassmorphism and cinematic motion.
+          Supercharged digital launchpads for brands that move culture.
         </div>
         <div
           style={{
             marginTop: 40,
             fontSize: 28,
-            color: "rgba(206,233,255,0.8)"
+            color: "#475569"
           }}
         >
           devignverse.com

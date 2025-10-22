@@ -49,7 +49,7 @@ export function Navbar() {
       transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
     >
       <div className="surface-card-strong relative mt-6 flex w-full max-w-6xl items-center justify-between rounded-3xl px-6 py-3">
-        <Magnetic className="select-none text-sm font-bold uppercase tracking-[0.4em] text-[var(--accent-primary)]">
+        <Magnetic className="select-none text-sm font-bold uppercase tracking-[0.4em] text-[var(--accent-secondary)]">
           Devign Verse
         </Magnetic>
         <nav className="hidden items-center gap-6 text-xs font-semibold uppercase tracking-[0.32em] text-[var(--foreground)] lg:flex">
@@ -61,7 +61,7 @@ export function Navbar() {
               className="group relative overflow-hidden rounded-full px-4 py-2 transition-transform duration-300 hover:scale-105"
             >
               <span>{link.label}</span>
-              <span className="pointer-events-none absolute inset-x-1 bottom-1 h-[2px] rounded-full bg-[linear-gradient(135deg,#9a5bff,#c4ff3f)] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+              <span className="pointer-events-none absolute inset-x-1 bottom-1 h-[2px] rounded-full bg-[linear-gradient(135deg,#2563eb,#0f172a)] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
             </button>
           ))}
         </nav>
@@ -78,7 +78,7 @@ export function Navbar() {
           <Magnetic className="lg:hidden">
             <button
               type="button"
-              className="flex h-10 w-10 items-center justify-center rounded-full bg-[linear-gradient(135deg,#9a5bff,#c4ff3f)] text-[#120424]"
+              className="flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-white text-[var(--accent-primary)] shadow-sm"
               onClick={() => setMobileOpen((state) => !state)}
             >
               {mobileOpen ? <X size={18} /> : <Menu size={18} />}

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import { motion } from "framer-motion";
@@ -70,7 +70,7 @@ export function Contact() {
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
         >
-          <div className="pointer-events-none absolute -right-32 top-10 h-72 w-72 rounded-full bg-[radial-gradient(circle,_rgba(196,255,63,0.4),_rgba(18,4,36,0)_70%)] blur-3xl" />
+          <div className="pointer-events-none absolute -right-32 top-10 h-72 w-72 rounded-full bg-[radial-gradient(circle,_rgba(37,99,235,0.16),_rgba(255,255,255,0)_70%)] blur-3xl" />
           <div className="grid gap-10 lg:grid-cols-[1fr_0.8fr] lg:items-center">
             <div className="space-y-5">
               <h3 className="text-2xl font-semibold text-[var(--foreground)]">Let’s build your next flagship product</h3>
@@ -78,19 +78,13 @@ export function Contact() {
                 Share a few details about your initiative. We will design a bespoke roadmap, team, and pricing within
                 48 hours.
               </p>
-              <div className="flex flex-wrap gap-4 text-sm font-semibold text-[var(--foreground)]">
-                <span className="rounded-full border border-transparent bg-[linear-gradient(135deg,#c4ff3f,#9a5bff)] px-4 py-2 text-[#100222]">
-                  Product transformation
-                </span>
-                <span className="rounded-full border border-transparent bg-[linear-gradient(135deg,#c4ff3f,#9a5bff)] px-4 py-2 text-[#100222]">
-                  AI + automation
-                </span>
-                <span className="rounded-full border border-transparent bg-[linear-gradient(135deg,#c4ff3f,#9a5bff)] px-4 py-2 text-[#100222]">
-                  Design systems
-                </span>
+              <div className="flex flex-wrap gap-4 text-sm font-semibold text-[var(--accent-primary)]">
+                <span className="rounded-full border border-slate-200 bg-slate-100 px-4 py-2">Product transformation</span>
+                <span className="rounded-full border border-slate-200 bg-slate-100 px-4 py-2">AI + automation</span>
+                <span className="rounded-full border border-slate-200 bg-slate-100 px-4 py-2">Design systems</span>
               </div>
               {status === "success" ? (
-                <div className="relative flex items-center gap-4 rounded-2xl border border-[#c4ff3f]/40 bg-[rgba(196,255,63,0.12)] px-4 py-3 text-[var(--accent-primary)]">
+                <div className="relative flex items-center gap-4 rounded-2xl border border-slate-200 bg-slate-100 px-4 py-3 text-[var(--accent-secondary)]">
                   <div className="h-16 w-16">
                     <Lottie animationData={successAnimation} loop={false} autoplay style={{ height: "64px" }} />
                   </div>
@@ -101,7 +95,7 @@ export function Contact() {
                 </div>
               ) : null}
               {status === "error" ? (
-                <p className="rounded-2xl border border-rose-300/40 bg-rose-400/10 px-4 py-3 text-xs text-rose-200">
+                <p className="rounded-2xl border border-rose-200 bg-rose-100/60 px-4 py-3 text-xs text-rose-700">
                   Something went wrong. Please retry or email hello@devignverse.com.
                 </p>
               ) : null}
@@ -111,7 +105,7 @@ export function Contact() {
                 <label className="flex flex-col gap-2 text-sm text-[var(--muted)]">
                   Name
                   <input
-                    className="rounded-2xl border border-[rgba(154,91,255,0.4)] bg-[#140430] px-4 py-3 text-sm text-[var(--foreground)] focus:border-[var(--accent-primary)]"
+                    className="rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm text-[var(--foreground)] focus:border-slate-900 focus:outline-none"
                     name="name"
                     value={form.name}
                     onChange={handleChange}
@@ -121,7 +115,7 @@ export function Contact() {
                 <label className="flex flex-col gap-2 text-sm text-[var(--muted)]">
                   Email
                   <input
-                    className="rounded-2xl border border-[rgba(154,91,255,0.4)] bg-[#140430] px-4 py-3 text-sm text-[var(--foreground)] focus:border-[var(--accent-primary)]"
+                    className="rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm text-[var(--foreground)] focus:border-slate-900 focus:outline-none"
                     name="email"
                     type="email"
                     value={form.email}
@@ -133,7 +127,7 @@ export function Contact() {
               <label className="flex flex-col gap-2 text-sm text-[var(--muted)]">
                 Company
                 <input
-                  className="rounded-2xl border border-[rgba(154,91,255,0.4)] bg-[#140430] px-4 py-3 text-sm text-[var(--foreground)] focus:border-[var(--accent-primary)]"
+                  className="rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm text-[var(--foreground)] focus:border-slate-900 focus:outline-none"
                   name="company"
                   value={form.company}
                   onChange={handleChange}
@@ -142,7 +136,7 @@ export function Contact() {
               <label className="flex flex-col gap-2 text-sm text-[var(--muted)]">
                 Project vision
                 <textarea
-                  className="min-h-[140px] rounded-2xl border border-[rgba(154,91,255,0.4)] bg-[#140430] px-4 py-3 text-sm text-[var(--foreground)] focus:border-[var(--accent-primary)]"
+                  className="min-h-[140px] rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm text-[var(--foreground)] focus:border-slate-900 focus:outline-none"
                   name="project"
                   value={form.project}
                   onChange={handleChange}
@@ -151,7 +145,7 @@ export function Contact() {
               </label>
               <motion.button
                 type="submit"
-                className="w-full rounded-full bg-[linear-gradient(135deg,#9a5bff,#c4ff3f)] px-6 py-3 text-sm font-semibold uppercase tracking-[0.4em] text-[#100222] transition-transform duration-300 hover:-translate-y-0.5"
+                className="w-full rounded-full bg-[#0f172a] px-6 py-3 text-sm font-semibold uppercase tracking-[0.35em] text-white transition-transform duration-300 hover:-translate-y-0.5"
                 whileTap={{ scale: 0.97 }}
                 disabled={status === "loading"}
               >
